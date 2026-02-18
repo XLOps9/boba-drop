@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BUBBLELICIOUS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ffec9e 0%, #ffcc33 50%, #ffaa00 100%);
+      color: #2c1a0d;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 900px;
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 24px;
+      padding: 40px 30px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+      border: 8px solid #ffdd44;
+    }
+    
+    .logo {
+      margin-bottom: 30px;
+    }
+    
+    .logo img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 20px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      max-width: 450px;
+      object-fit: contain;
+    }
+    
+    h1 {
+      font-size: 4.2rem;
+      font-weight: 900;
+      letter-spacing: -1px;
+      color: #b82e00;
+      text-shadow: 3px 3px 0 #ffdd44, 6px 6px 0 #ffaa00;
+      margin-bottom: 12px;
+      line-height: 0.95;
+    }
+    
+    .tagline {
+      font-size: 1.9rem;
+      font-weight: 600;
+      color: #4a2c0f;
+      margin-bottom: 35px;
+    }
+    
+    .bubbles {
+      font-size: 3.5rem;
+      margin: 20px 0;
+      animation: float 7s infinite ease-in-out;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50%      { transform: translateY(-18px); }
+    }
+    
+    .coming-soon {
+      font-size: 2.1rem;
+      font-weight: bold;
+      color: #d62839;
+      margin: 30px 0 20px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+    }
+    
+    @media (max-width: 600px) {
+      h1 { font-size: 3.4rem; }
+      .tagline { font-size: 1.6rem; }
+      .container { padding: 30px 20px; }
+      .logo img { max-width: 320px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo">
+      <img src="https://thumbs.dreamstime.com/b/chill-gorilla-sunglasses-enjoying-refreshing-drink-vibrant-illustration-wearing-pink-holding-colorful-its-relaxed-vibe-338180181.jpg" 
+           alt="BUBBLELICIOUS Gorilla with pink sunglasses drinking boba">
+    </div>
+
+    <h1>BUBBLELICIOUS</h1>
+    
+    <div class="tagline">Blowin' the biggest, bubbliest fun your way 🦍🫧</div>
+    
+    <div class="bubbles">🫧 🫧 🫧 🫧 🫧</div>
+
+    <div class="coming-soon">COMING SOON!</div>
+    
+    <p style="font-size:1.4rem; margin:25px 0; line-height:1.5;">
+      Get ready for the most <strong>deliciously explosive</strong> bubble experience ever.<br>
+      Sticky. Sweet. Gorilla-approved.
+    </p>
+  </div>
+
+</body>
+</html>
